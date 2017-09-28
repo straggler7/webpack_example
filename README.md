@@ -1,24 +1,9 @@
-# README
+# Webpack Example App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Created to support a webpacker pull request.
 
-Things you may want to cover:
+Webpacker does not create a valid manifest for js files whose source is a Rails engine in the vendor/gems directory.
 
-* Ruby version
+This repo includes a one-line change in node_modules/@rails/webpacker/package/environment.js (line 48 commented-out and line 49 added). So that the manifest is correctly created.
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
